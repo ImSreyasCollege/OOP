@@ -3,6 +3,8 @@ import java.util.Arrays;
 
 class Search{
     public static void main(String arg[]){
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Search element in array\nDate : 13/02/2024\n");
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the size of the array : ");
         int n = scanner.nextInt();
