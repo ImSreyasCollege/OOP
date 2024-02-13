@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class SymmetricMatrix{
     public static void main(String[] arg){
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Check for symmetric matrices\nDate : 13/02/2024\n");
+
         Scanner read = new Scanner(System.in);
         System.out.println("Enter the rows and cols of the matrix : ");
         int rows = read.nextInt();

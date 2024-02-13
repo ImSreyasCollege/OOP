@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Cpu{
     public static void main(String[] arg){
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Display CPU specs\nDate : 13/02/2024\n");
         class CpuClass{
             int price;
 

@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Matrix{
     public static void main(String[] args){
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Matrix addition\nDate : 13/02/2024\n");
+
         Scanner read = new Scanner(System.in);
         System.out.println("Enter the rows and cols in the first matrix : ");
         int row1 = read.nextInt();
