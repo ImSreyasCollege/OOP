@@ -13,7 +13,7 @@ class Area{
 }
 class AreaFunctionOverload{
     public static void main(String[] args){
-		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Area of shapes using function overloading\nDate : 13/02/2024\n");
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Area of shapes using Function Overloading\nDate : 13/02/2024\n");
 
         Scanner scanner = new Scanner(System.in);
         float radius, base, length, breadth, height;
