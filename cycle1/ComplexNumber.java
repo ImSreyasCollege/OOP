@@ -1,9 +1,8 @@
-// Sreyas - 53
 import java.util.Scanner;
 
 public class ComplexNumber{
     public static void main(String[] arg){
-		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Addition of complex numbers numbers\nDate : 13/02/2024\n");
+		System.out.println("\nName : Sreyas Satheesh\nRoll.no : 53\nTitle : Addition of complex numbers numbers\nDate : 13/02/2024\n");
         class ComplexNumberClass{
             int real;
             int img;

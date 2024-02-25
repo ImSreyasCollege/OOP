@@ -61,7 +61,7 @@ class Cpu {
         }
         
         public void printRAMInfo() {
-            System.out.println("  RAM Memory: " + memory + " GB");
+            System.out.println("  RAM Size: " + memory + " GB");
             System.out.println("  Manufacturer: " + manufacturer);
         }
     }
