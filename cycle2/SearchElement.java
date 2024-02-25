@@ -25,5 +25,7 @@ class Search{
         }
         if(flag == 0) System.out.println("Element " + value + " not found in the array.");
         else System.out.println("Element " + value + " found in the array.");
+
+        scanner.close();
     }
 }

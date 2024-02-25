@@ -47,6 +47,8 @@ class Product {
 		ProductClass minimum = obj1.price < obj2.price ? obj1 : obj2;
 		minimum = minimum.price < obj3.price ? minimum : obj3;
 		System.out.println("\nThe product with the smallest price is " + minimum.pname + " with a price of " + minimum.price + "\n");
+
+		scan.close();
 	}
 }
 

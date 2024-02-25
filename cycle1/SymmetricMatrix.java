@@ -42,5 +42,7 @@ public class SymmetricMatrix{
         } else {
             System.out.println("\nThe matrix is not a Symmetric matrix.");
         }
+
+        read.close();
     }
 }

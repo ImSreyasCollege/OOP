@@ -43,5 +43,7 @@ class AreaFunctionOverload{
         System.out.println("\nArea of Circle is " + areaOfCircle);
         System.out.println("Area of Triangle is " + areaOfTriangle);
         System.out.println("Area of Box is " + areaOfBox);
+
+        scanner.close();
     }
 }

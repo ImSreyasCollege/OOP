@@ -38,5 +38,7 @@ class Main{
             }
         }
         if(flag == 0) System.out.println("Employee not found");
+
+        scanner.close();
     }
 }

@@ -16,5 +16,7 @@ class Manipulation{
         String subStr = scanner.nextLine();
         if(str.contains(subStr)) System.out.println("String '" + str + "' contains the substring '" + subStr + "'");
         else System.out.println("String '" + str + "' not contains the substring '" + subStr + "'");
+
+        scanner.close();
     }
 }

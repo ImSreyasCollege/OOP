@@ -31,5 +31,7 @@ public class StringSorting{
             }
         }
         System.out.println("Array after sorting : " + Arrays.toString(str));
+
+        scan.close();
     }
 }

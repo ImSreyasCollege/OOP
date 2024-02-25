@@ -58,5 +58,7 @@ public class Matrix{
         } else {
             System.out.println("Addition not possible.");
         }
+
+        read.close();
     }
 }

@@ -31,5 +31,7 @@ public class ComplexNumber{
         int real = first.real + second.real;
         int img = first.img + second.img;
         System.out.println("Sum of the complex number is : " + real + " + " + img + "i");
+
+        scan.close();
     }
 }
