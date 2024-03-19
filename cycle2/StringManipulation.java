@@ -11,6 +11,8 @@ class Manipulation{
         System.out.println("\nString is : " + str);
         System.out.println("Length of the string is : " + str.length());
         System.out.println("Character at the position is : " + str.charAt(0));
+        System.out.println("Lower case : " + str.toLowerCase());
+        System.out.println("Upper case : " + str.toUpperCase());
 
         System.out.print("Enter a substring to check : ");
         String subStr = scanner.nextLine();
