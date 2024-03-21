@@ -58,5 +58,6 @@ class Main {
         for(int i =0; i< n; i++){
             arr[i].Display();
         }
+        scanner.close();
     }
 }

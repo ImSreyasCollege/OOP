@@ -10,7 +10,7 @@ class Search{
         int n = scanner.nextInt();
         int arr[] = new int[n];
         System.out.println("Enter the array elements : ");
-        for(int i=0; i<n; i++){
+        for(int i=0; i<arr.length; i++){
             arr[i] = scanner.nextInt();
         }
         System.out.println("Array is : " + Arrays.toString(arr));
@@ -23,8 +23,7 @@ class Search{
                 break;
             }
         }
-        if(flag == 0) System.out.println("Element " + value + " not found in the array.");
-        else System.out.println("Element " + value + " found in the array.");
+        System.out.println("Element " + value + (flag == 0 ? " not found in the array" : " found in the array"));
 
         scanner.close();
     }
