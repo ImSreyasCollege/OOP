@@ -19,6 +19,7 @@ public class StringSorting{
 
         // Arrays.sort(str);
         // System.out.println(Arrays.toString(str));
+        // End of method 1
 
         // sorting method 2
         for(int i=0; i<n-1; i++){
@@ -31,6 +32,7 @@ public class StringSorting{
             }
         }
         System.out.println("Array after sorting : " + Arrays.toString(str));
+        // end of method 2
 
         scan.close();
     }
