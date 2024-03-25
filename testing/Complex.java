@@ -28,6 +28,5 @@ class Main{
         Complex secondNumber = new Complex(real, img);               
 
         System.out.println("Sum : "+ (firstNumber.real + secondNumber.real) + " + " +(firstNumber.img + secondNumber.img) + "i");
-        scanner.close();
     }
 }
