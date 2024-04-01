@@ -1,3 +1,3 @@
-class Something {
+public class New {
 
 }
