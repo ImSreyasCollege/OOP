@@ -34,6 +34,6 @@ class Teacher extends Employee {
         this.department = department;
     }
     void display(){
-        
+       System.out.println(""); 
     }
 }
