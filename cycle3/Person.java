@@ -21,6 +21,9 @@ class Employee extends Person {
         this.qualification = qualification;
         this.salary = salary;
     }
+    void display(){
+        System.out.println("\nTest");
+    }
 }
 
 class Teacher extends Employee {
@@ -34,6 +37,14 @@ class Teacher extends Employee {
         this.department = department;
     }
     void display(){
-        
+        System.out.println("\nTeacher id : " + this.teacherId + "\nSubject : " + this.subject + "\nDepartment : " + this.department);
+        super().display();
+    }
+}
+
+class TeacherDetails {
+    public static void main(String []arg) {
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Details of Teachers.\nDate : 06/04/2024\n");
+
     }
 }
