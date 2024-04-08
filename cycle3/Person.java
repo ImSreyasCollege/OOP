@@ -50,6 +50,7 @@ class Teacher extends Employee {
 
 class PersonMain {
     public static void main(String[] arg){
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Details of Teachers.\nDate : 06/04/2024\n");
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the no.of Teachers : ");
         int TeacherCount = scanner.nextInt();
