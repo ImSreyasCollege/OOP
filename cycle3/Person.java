@@ -37,6 +37,7 @@ class Teacher extends Employee {
         this.department = department;
     }
     void display(){
+       System.out.println(""); 
         System.out.println("\nTeacher id : " + this.teacherId + "\nSubject : " + this.subject + "\nDepartment : " + this.department);
         super().display();
     }
