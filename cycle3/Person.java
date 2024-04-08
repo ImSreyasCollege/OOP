@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Person {
     String name, gender, address;
     int age;
@@ -7,6 +9,9 @@ class Person {
         this.gender = gender;
         this.address = address;
         this.age = age;
+    }
+    void display(){
+        System.out.println("Name: " + name + " gender: " + gender + " address: " + address + " age: " + age);
     }
 }
 
@@ -22,7 +27,8 @@ class Employee extends Person {
         this.salary = salary;
     }
     void display(){
-        System.out.println("\nTest");
+       System.out.println("Employee Id : " + empId + " Company name : " + companyName + " Qualification : " + qualification + " Salary : " + salary); 
+       super.display();
     }
 }
 
@@ -37,15 +43,22 @@ class Teacher extends Employee {
         this.department = department;
     }
     void display(){
-       System.out.println(""); 
-        System.out.println("\nTeacher id : " + this.teacherId + "\nSubject : " + this.subject + "\nDepartment : " + this.department);
-        super().display();
+       System.out.println("Teacher Id : " + teacherId + " Department : " + department + " Subject : " + subject); 
+       super.display();
     }
 }
 
-class TeacherDetails {
-    public static void main(String []arg) {
-		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Details of Teachers.\nDate : 06/04/2024\n");
+class PersonMain {
+    public static void main(String[] arg){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the no.of Teachers : ");
+        int TeacherCount = scanner.nextInt();
 
+        Teacher [] Teachers = new Teacher[TeacherCount];
+        for (int i=0; i<TeacherCount; i++) {
+            // Teachers[i] = new Teacher();
+        }
+
+        scanner.close();
     }
 }
