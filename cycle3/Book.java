@@ -42,3 +42,8 @@ class Fiction extends Book {
         System.out.println("Details of the book\nTitle : " + title + "\nCategory : " + category + "\nName : " + name + "\nLanguage : " + language + "\nPrice : " + price + "\nAuthor : " + author + "\nCompany : " + company + "\nDate : " + date); 
     }
 }
+class BookMain {
+    public static void main(String[] arg) {
+        
+    }
+}
