@@ -45,7 +45,7 @@ class Fiction extends Book {
 class BookMain {
     public static void main(String[] arg) {
         Scanner scanner = new Scanner(System.in);
-        String title, name, language, author, company, date;
+        String name, language, author, company, date;
         int price;
         System.out.print("Enter the total number of books : ");
         int MAX = scanner.nextInt();
