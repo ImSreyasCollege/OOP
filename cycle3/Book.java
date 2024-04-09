@@ -55,8 +55,8 @@ class BookMain {
         boolean status = true;
         while(status && i+j < MAX){
             System.out.print("\nCATEGORY\n---------------\n1)Literature\n2)Fiction\n\nOPERATIONS\n---------------\n3)Display\n4)Exit\nChoose one : ");
-            int choise = scanner.nextInt();              
-            switch(choise){
+            int choice = scanner.nextInt();              
+            switch(choice){
                 case 1 : 
                     System.out.println("\nEnter the Details of the book " + (i+j+1));
                     System.out.print("Name : ");
