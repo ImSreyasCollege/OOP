@@ -119,5 +119,6 @@ class BookMain {
                 arr2[k].display();
             }
         }
+        scanner.close();
     }
 }
