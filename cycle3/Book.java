@@ -44,6 +44,7 @@ class Fiction extends Book {
 }
 class BookMain {
     public static void main(String[] arg) {
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Details of Book.\nDate : 06/04/2024\n");
         Scanner scanner = new Scanner(System.in);
         String name, language, author, company, date;
         int price;
