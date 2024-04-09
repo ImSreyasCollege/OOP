@@ -24,29 +24,29 @@ class Literature extends Book {
     String category = "literature";
     String title;
     
-    public Literature(String title, String name, String language, int price, String author, String company, String date){
+    public Literature(String name, String language, int price, String author, String company, String date){
         super(name, language, price, author, company, date);
-        this.title = title;
     }
     void display(){
-        System.out.println("Details of the book\nTitle : " + title + "\nCategory : " + category + "\nName : " + name + "\nLanguage : " + language + "\nPrice : " + price + "\nAuthor : " + author + "\nCompany : " + company + "\nDate : " + date); 
+        System.out.println("\nName : " + name + "\nCategory : " + category + "\nLanguage : " + language + "\nPrice : " + price + "\nAuthor : " + author + "\nCompany : " + company + "\nDate : " + date); 
     }
 }
 class Fiction extends Book {
     String category = "fiction";
     String title;
     
-    public Fiction(String title, String name, String language, int price, String author, String company, String date){
+    public Fiction(String name, String language, int price, String author, String company, String date){
         super(name, language, price, author, company, date);
-        this.title = title;
     }
     void display(){
-        System.out.println("Details of the book\nTitle : " + title + "\nCategory : " + category + "\nName : " + name + "\nLanguage : " + language + "\nPrice : " + price + "\nAuthor : " + author + "\nCompany : " + company + "\nDate : " + date); 
+        System.out.println("\nName : " + name + "\nCategory : " + category + "\nLanguage : " + language + "\nPrice : " + price + "\nAuthor : " + author + "\nCompany : " + company + "\nDate : " + date); 
     }
 }
 class BookMain {
     public static void main(String[] arg) {
         Scanner scanner = new Scanner(System.in);
+        String title, name, language, author, company, date;
+        int price;
         System.out.print("Enter the total number of books : ");
         int MAX = scanner.nextInt();
         Literature arr1[] = new Literature[MAX];
@@ -58,42 +58,40 @@ class BookMain {
             int choise = scanner.nextInt();              
             switch(choise){
                 case 1 : 
-                    System.out.print("\nEnter the Details of the book\nTitle : ");
-                    scanner.nextLine();
-                    String title = scanner.nextLine();
+                    System.out.println("\nEnter the Details of the book " + (i+j+1));
                     System.out.print("Name : ");
-                    String name = scanner.nextLine();
+                    scanner.nextLine();
+                    name = scanner.nextLine();
                     System.out.print("Language : ");
-                    String language = scanner.nextLine();
+                    language = scanner.nextLine();
                     System.out.print("Price : ");
-                    int price = scanner.nextInt();
+                    price = scanner.nextInt();
                     System.out.print("Author : ");
                     scanner.nextLine();
-                    String author = scanner.nextLine();
+                    author = scanner.nextLine();
                     System.out.print("Publishing company : ");
-                    String company = scanner.nextLine();
+                    company = scanner.nextLine();
                     System.out.print("Date : ");
-                    String date = scanner.nextLine();
-                    arr1[i++] = new Literature(title, name, language, price, author, company, date);
+                    date = scanner.nextLine();
+                    arr1[i++] = new Literature(name, language, price, author, company, date);
                     break;
                 case 2 : 
-                    System.out.print("\nEnter the Details of the book\nTitle : ");
-                    scanner.nextLine();
-                    String title = scanner.nextLine();
+                    System.out.println("\nEnter the Details of the book " + (i+j+1));
                     System.out.print("Name : ");
-                    String name = scanner.nextLine();
+                    scanner.nextLine();
+                    name = scanner.nextLine();
                     System.out.print("Language : ");
-                    String language = scanner.nextLine();
+                    language = scanner.nextLine();
                     System.out.print("Price : ");
-                    int price = scanner.nextInt();
+                    price = scanner.nextInt();
                     System.out.print("Author : ");
                     scanner.nextLine();
-                    String author = scanner.nextLine();
+                    author = scanner.nextLine();
                     System.out.print("Publishing company : ");
-                    String company = scanner.nextLine();
+                    company = scanner.nextLine();
                     System.out.print("Date : ");
-                    String date = scanner.nextLine();
-                    arr2[j++] = new Fiction(title, name, language, price, author, company, date);
+                    date = scanner.nextLine();
+                    arr2[j++] = new Fiction(name, language, price, author, company, date);
                     break;
                 case 3 : 
                     for(int k=0; k<i; k++){
@@ -104,11 +102,22 @@ class BookMain {
                         System.out.println("\nDetials of book " + (k+i+1));
                         arr2[k].display();
                     }
+                    break;
                 case 4 : 
                     status = false;
                     break;
                 default : System.out.println("Invalid choise.");
             }
         }       
+        if((i+j) >= MAX){
+            for(int k=0; k<i; k++){
+                System.out.println("\nDetials of book " + (k+1));
+                arr1[k].display();
+            }
+            for(int k=0; k<j; k++){
+                System.out.println("\nDetials of book " + (k+i+1));
+                arr2[k].display();
+            }
+        }
     }
 }
