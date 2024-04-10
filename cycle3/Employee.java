@@ -38,7 +38,7 @@ class Main {
         Teacher []arr = new Teacher[n];
         System.out.println("Enter the details ");
         for(int i=0; i< n; i++){
-            System.out.println("Enter the details of Teacher " + i+1 + " : ");
+            System.out.println("Enter the details of Teacher " + (i+1) + " : ");
             System.out.print("id : ");
             int id = scanner.nextInt();
             System.out.print("name : ");
