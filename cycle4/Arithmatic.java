@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 class Arithmatic {
     public static void main(String [] args) {
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Arithmatic operations using package.\nDate : 15/04/2024\n");
         double a, b;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the values to add");
