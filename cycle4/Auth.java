@@ -44,7 +44,7 @@ class AuthChecker {
 }
 public class Auth {
     public static void main(String [] arg) {
-		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Username & Password checker.\nDate : 15/04/2024\n");
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : User Authentication.\nDate : 15/04/2024\n");
         Scanner scanner = new Scanner(System.in);
         while(true){
             int flag = 0;
