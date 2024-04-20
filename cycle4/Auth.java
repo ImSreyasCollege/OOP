@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 // import auth.util.AuthChecker;
 class UserDefinedException extends Exception {
     public UserDefinedException(String message){
@@ -8,46 +6,45 @@ class UserDefinedException extends Exception {
     }
 }
 
-class AuthChecker extends Exception{
+class AuthChecker {
     String username, password;
-    Pattern usernamePattern = Pattern.compile("^[a-z]{6,}");
-    Pattern passwordPattern = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{6,}$");
+    String USERNAME = "admin";
+    String PASSWORD =  "admin@123";
     
     public AuthChecker(String username, String password){
         this.username = username;
         this.password = password;
     }
     public boolean usernameChecker(){
-        Matcher matcher = usernamePattern.matcher(this.username);
         try {
-            if(matcher.find()){
+            if(USERNAME.equals(this.username)){
                 System.out.println("Username passed...");
                 return true;
             } else {
-                throw new UserDefinedException("Invalid username (need 6 lowercase letters)");
+                throw new UserDefinedException("Invalid username");
             }
         } catch (UserDefinedException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
             return false;
         }
     }
     public boolean passwordChecker(){
-        Matcher mat = passwordPattern.matcher(this.password);
         try {
-            if(mat.find()){
+            if(PASSWORD.equals(this.password)){
                 System.out.println("Password passed...");
                 return true;
             } else {
-                throw new UserDefinedException("Password failed (Should contain atleast 1 lowercase, 1 uppercase and 1 digit and minimum 6 characters)");
+                throw new UserDefinedException("Invalid password");
             }
         } catch (UserDefinedException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
             return false;
         }
     }
 }
 public class Auth {
     public static void main(String [] arg) {
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Username & Password checker.\nDate : 15/04/2024\n");
         Scanner scanner = new Scanner(System.in);
         while(true){
             int flag = 0;
@@ -58,7 +55,11 @@ public class Auth {
             AuthChecker auth = new AuthChecker(username, password);
             if(auth.usernameChecker()) flag++;
             if(auth.passwordChecker()) flag++;
-            if(flag == 2) break;
+            if(flag == 2) {
+                System.out.println("User authenticated successfully");
+                break;
+            }
         }
+        scanner.close();
     }   
 }
