@@ -3,20 +3,16 @@ import auth.util.AuthChecker;
 
 public class Auth {
     public static void main(String [] arg) {
-        int flag = 0;
         Scanner scanner = new Scanner(System.in);
         while(true){
-            System.out.println("username : ");
+            int flag = 0;
+            System.out.print("\nusername : ");
             String username = scanner.nextLine();
-            System.out.println("password : ");
+            System.out.print("password : ");
             String password = scanner.nextLine();
             AuthChecker auth = new AuthChecker(username, password);
-            if(auth.usernameChecker()){
-                flag++;
-            }  
-            if(auth.passwordChecker()){
-                flag++;
-            }
+            if(auth.usernameChecker()) flag++;
+            if(auth.passwordChecker()) flag++;
             if(flag == 2) break;
         }
     }   
