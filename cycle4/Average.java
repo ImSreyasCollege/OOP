@@ -7,6 +7,7 @@ class NegativeException extends Exception {
 }
 public class Average {
     public static void main(String[] args){
+		System.out.println("Name : Sreyas Satheesh\nRoll.no : 53\nTitle : Average of N positive numbers.\nDate : 15/04/2024\n");
         Scanner scanner = new Scanner(System.in);
         int sum = 0;
         System.out.print("Enter the no.of elements : ");
