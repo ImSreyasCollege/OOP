@@ -96,27 +96,27 @@ class BookMain {
                     break;
                 case 3 : 
                     for(int k=0; k<i; k++){
-                        System.out.println("\nDetials of book " + (k+1));
+                        System.out.println("\nDetails of book " + (k+1));
                         arr1[k].display();
                     }
                     for(int k=0; k<j; k++){
-                        System.out.println("\nDetials of book " + (k+i+1));
+                        System.out.println("\nDetails of book " + (k+i+1));
                         arr2[k].display();
                     }
                     break;
                 case 4 : 
                     status = false;
                     break;
-                default : System.out.println("Invalid choise.");
+                default : System.out.println("Invalid choice.");
             }
         }       
         if((i+j) >= MAX){
             for(int k=0; k<i; k++){
-                System.out.println("\nDetials of book " + (k+1));
+                System.out.println("\nDetails of book " + (k+1));
                 arr1[k].display();
             }
             for(int k=0; k<j; k++){
-                System.out.println("\nDetials of book " + (k+i+1));
+                System.out.println("\nDetails of book " + (k+i+1));
                 arr2[k].display();
             }
         }
