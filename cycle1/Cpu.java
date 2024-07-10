@@ -27,12 +27,12 @@ class Cpu {
         System.out.println("Processor and RAM information:");
 
         Processor processor = new Processor(noOfCores, ProcessorManufacturer); 
-        RAM ram = RAM.getRAM(size, manufacturer); 
+        Cpu.RAM ram = Cpu.RAM.getRAM(size, manufacturer); 
         processor.printProcessorInfo();
         ram.printRAMInfo();
     }
     
-    public static class Processor {
+    public class Processor {
         private int numberOfCores;
         private String manufacturer;
         

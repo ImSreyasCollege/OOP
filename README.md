@@ -5,7 +5,7 @@
 
 <details>
 <summary>
-<h2> 1) Normal nested classes </h2> 
+<h3> 1) Normal nested classes </h3> 
 </summary>
 
 ```java
@@ -33,7 +33,7 @@ public class nestedClass {
 </details>
 <details>
 <summary>
-<h2> 2) Static nested classes </h2> 
+<h3> 2) Static nested classes </h3> 
 </summary>
 
 ```java
