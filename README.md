@@ -3,8 +3,10 @@
 
 ##
 
-```
-Arrays.toString(array) - converting array to string
+```java
+Arrays.toString(array) // converting array to string
+Arrays.deepToString(array) // converting 2D array to string
+Arrays.fill(array, value) // array will be filled with given value
 ```
 
 <details>
