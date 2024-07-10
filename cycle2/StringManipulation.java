@@ -13,6 +13,7 @@ class Manipulation{
         System.out.println("Character at the position is : " + str.charAt(0));
         System.out.println("Lower case : " + str.toLowerCase());
         System.out.println("Upper case : " + str.toUpperCase());
+        System.out.println("Reversed string : " + new StringBuilder(str).reverse().toString());
 
         System.out.print("Enter a substring to check : ");
         String subStr = scanner.nextLine();
