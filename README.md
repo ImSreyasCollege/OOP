@@ -162,14 +162,19 @@ class Publisher {
     String author, company, date;
 
     void display(){
-
+        System.out.println("author : " + this.author);
+        System.out.println("company : " + this.company);
+        System.out.println("date : " + this.date);
     }
 }
 class Book extends Publisher {
     String name, language, price;
 
     void display() {
-
+        System.out.println("\nname : " + this.name);
+        System.out.println("language : " + this.language);
+        System.out.println("price : " + this.price);
+        super.display();
     }
 }
 class Literature extends Book {
@@ -184,7 +189,8 @@ class Literature extends Book {
         this.date = date;
     }
     void display() {
-        System.out.println("\nname : " + this.name + "\ncategory : " + this.category + "\nlanguage : " + this.language + "\nprice : " + this.price + "\nauthor : " + this.author + "\ncompany : " + this.company + "\ndate : " + this.date);
+        super.display();
+        System.out.println("category : " + this.category);
     }
 }
 class Fiction extends Book {
@@ -200,7 +206,8 @@ class Fiction extends Book {
     }
 
     void display() {
-        System.out.println("\nname : " + this.name + "\ncategory : " + this.category + "\nlanguage : " + this.language + "\nprice : " + this.price + "\nauthor : " + this.author + "\ncompany : " + this.company + "\ndate : " + this.date);
+        super.display();
+        System.out.println("category : " + this.category);
     }
 }
 public class Test {
@@ -223,14 +230,14 @@ public class Test {
             System.out.println("Book " + (i+1));
             arr2[i] = createBook("Fiction", scanner);
         }
-        System.out.println("Details of Literature books");
+        System.out.println("\nDetails of Literature books");
         for (int i=0; i<a; i++) {
-            System.out.println("Book " + (i+1));
+            System.out.println("\nBook " + (i+1));
             arr1[i].display();
         }
-        System.out.println("Details of Fiction books");
+        System.out.println("\nDetails of Fiction books");
         for (int i=0; i<b; i++) {
-            System.out.println("Book " + (i+1));
+            System.out.println("\nBook " + (i+1));
             arr2[i].display();
         }
 
