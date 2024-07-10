@@ -3,6 +3,10 @@
 
 ##
 
+```
+Arrays.toString(array) - converting array to string
+```
+
 <details>
 <summary>
 <h3> 1) Normal nested classes </h3> 
